@@ -1,0 +1,19 @@
+if player executes command : !coulour
+    Coulour=pink,red,white,black,blue,green
+    command /coulour
+    permission: /op
+    permission message: 
+    executable by player 
+    trigger:
+        if arg-1 is pink:
+        event-block is pink_wool
+    broadcast "de kleur is roze"
+    broadcast "3"
+    broadcast "2"
+    broadcast "1"
+    if player stands on pink:
+        trigger:
+        broadcast "/heal player"
+    if player does not stand on pink:
+        trigger:
+        broadcast "/kill player"
